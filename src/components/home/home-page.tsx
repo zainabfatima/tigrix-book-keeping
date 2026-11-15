@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Icon } from "@/components/brand/icons";
 import { BooksIllustration } from "@/components/brand/books-illustration";
+import { StorySlider } from "@/components/home/story-slider";
 import { FadeIn } from "@/components/motion/fade-in";
 import { SnapshotCounters } from "@/components/motion/counters";
 import { Container } from "@/components/shared/container";
@@ -62,19 +63,7 @@ export function HomePage() {
               </Button>
             </div>
           </div>
-          <div className="relative">
-            <div className="absolute -bottom-4 -right-4 hidden h-full w-full rounded-2xl bg-amber lg:block" />
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-              <Image
-                src={images.plans.src}
-                alt={images.plans.alt}
-                fill
-                priority
-                sizes="(min-width: 1024px) 46vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
+          <StorySlider />
         </Container>
       </section>
 

@@ -244,6 +244,109 @@ export const services: Service[] = [
 
 export const homeServices = services.filter((service) => service.home);
 
+export type StorySlide = {
+  id: string;
+  kind: "Problem" | "Service" | "Who we serve";
+  title: string;
+  body: string;
+  href: string;
+  cta: string;
+  image: Photo;
+};
+
+export const storySlides: StorySlide[] = [
+  {
+    id: "plans-slide",
+    kind: "Problem",
+    title: "The job moves faster than the books",
+    body: "Drawings, change orders, and store runs pile up while the file stays a month behind.",
+    href: "/construction-bookkeeping",
+    cta: "Construction bookkeeping",
+    image: images.plans,
+  },
+  {
+    id: "unsorted",
+    kind: "Problem",
+    title: "Months of transactions, still uncategorized",
+    body: "Receipts, card charges, and bank lines pile up until the file is too messy to trust.",
+    href: "/services#cleanup",
+    cta: "See cleanup & catch-up",
+    image: images.spreadsheets,
+  },
+  {
+    id: "unreconciled",
+    kind: "Problem",
+    title: "The bank balance and the books disagree",
+    body: "Unreconciled accounts hide missing deposits, duplicate expenses, and loans that were never tied out.",
+    href: "/services#reconciliations",
+    cta: "See reconciliations",
+    image: images.charts,
+  },
+  {
+    id: "job-mix",
+    kind: "Problem",
+    title: "Job costs dumped into one bucket",
+    body: "Labor, materials, and subcontractors that are not coded to the job turn the margin into a guess.",
+    href: "/services#job-costing",
+    cta: "See job costing",
+    image: images.siteCrew,
+  },
+  {
+    id: "weekly-slide",
+    kind: "Service",
+    title: "A weekly close you can run the work on",
+    body: "We categorize, reconcile, and send a short written update every week so decisions are not waiting on last month.",
+    href: "/services#weekly-bookkeeping",
+    cta: "Weekly bookkeeping",
+    image: images.laptopNotes,
+  },
+  {
+    id: "quickbooks-slide",
+    kind: "Service",
+    title: "QuickBooks set up for how the work runs",
+    body: "New company files, moves between Online and Desktop, and a chart of accounts that matches the business.",
+    href: "/services#quickbooks",
+    cta: "QuickBooks setup",
+    image: images.floorLaptop,
+  },
+  {
+    id: "reports-slide",
+    kind: "Service",
+    title: "Reports your CPA can use",
+    body: "Profit and loss, balance sheet, and a file organized at each close. Tigrix prepares the books. Tax filing stays with your CPA.",
+    href: "/services#tax-ready",
+    cta: "Tax-ready books",
+    image: images.reportsTable,
+  },
+  {
+    id: "industries-slide",
+    kind: "Who we serve",
+    title: "Construction first. Every business welcome.",
+    body: "Contractors, restaurants, retail, trucking, real estate, professional firms, e-commerce, and healthcare practices.",
+    href: "/industries",
+    cta: "See industries",
+    image: images.smallBusiness,
+  },
+  {
+    id: "atlanta-slide",
+    kind: "Who we serve",
+    title: "Bookkeeping across metro Atlanta",
+    body: "Marietta, Kennesaw, Alpharetta, Smyrna, Roswell, Sandy Springs, Decatur, and remote clients in Georgia.",
+    href: "/service-areas/atlanta",
+    cta: "Atlanta service area",
+    image: images.atlanta,
+  },
+  {
+    id: "detroit-slide",
+    kind: "Who we serve",
+    title: "Bookkeeping across metro Detroit",
+    body: "Dearborn, Troy, Southfield, Warren, Livonia, Ann Arbor, and remote clients in Michigan.",
+    href: "/service-areas/detroit",
+    cta: "Detroit service area",
+    image: images.detroit,
+  },
+];
+
 export const constructionPoints = [
   {
     title: "Job costing",
