@@ -11,7 +11,7 @@ import { images, industries } from "@/config/site";
 export const metadata: Metadata = {
   title: "Industries We Serve",
   description:
-    "Construction is the primary niche at Tigrix LLC. We also keep books for real estate, restaurants, retail, trucking, professional services, e-commerce, and healthcare practices.",
+    "Construction is the primary niche at Tigris LLC. We also keep books for real estate, restaurants, retail, trucking, professional services, e-commerce, and healthcare practices.",
 };
 
 export default function IndustriesPage() {

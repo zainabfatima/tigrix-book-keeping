@@ -9,7 +9,7 @@ import { faqs, images } from "@/config/site";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers about Tigrix bookkeeping: construction and other industries, Atlanta and Detroit, QuickBooks, catch-up work, job costing, CPA handoff, and pricing.",
+    "Answers about Tigris bookkeeping: weekly books, receipt organization, messy-books cleanup, construction and other industries, Marietta, Atlanta, and Detroit.",
 };
 
 export default function FaqPage() {

@@ -10,7 +10,7 @@ import { images, packages, priceNote } from "@/config/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Weekly Clean Books, Monthly Essentials, and Cleanup & Catch-Up. Starting prices are placeholders until Tigrix quotes your volume and catch-up work.",
+    "Weekly Clean Books, Monthly Essentials, and Cleanup & Catch-Up. Starting prices are placeholders until Tigris quotes your volume and catch-up work.",
 };
 
 export default function PricingPage() {

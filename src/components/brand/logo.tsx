@@ -2,18 +2,29 @@ import { cn } from "@/lib/utils";
 
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 48 48"
-      className={cn("size-10 shrink-0", className)}
-      aria-hidden="true"
-    >
-      <rect width="48" height="48" rx="14" fill="#0F1E3D" />
-      <rect x="1.25" y="1.25" width="45.5" height="45.5" rx="13" stroke="#F59E0B" strokeOpacity="0.45" />
-      <path d="M10 13.5h28a2.25 2.25 0 0 1 0 4.5H10a2.25 2.25 0 0 1 0-4.5Z" fill="#F8FAFC" />
-      <path d="M29 13.5h9a2.25 2.25 0 0 1 0 4.5h-9V13.5Z" fill="#F59E0B" />
-      <path d="M21.25 16.5h5.5A2.25 2.25 0 0 1 29 18.75v16.5a2.25 2.25 0 0 1-2.25 2.25h-5.5A2.25 2.25 0 0 1 19 35.25v-16.5a2.25 2.25 0 0 1 2.25-2.25Z" fill="#F8FAFC" />
-      <path d="M31.5 24.5h7.5M31.5 29h7.5" stroke="#10B981" strokeWidth="2" strokeLinecap="round" />
-      <path d="M31.6 34.4 34.2 37l5.6-6.2" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg viewBox="0 0 48 48" className={cn("size-14 shrink-0", className)} aria-hidden="true">
+      <rect width="48" height="48" rx="13" fill="#0F1E3D" />
+      <rect
+        x="1.5"
+        y="1.5"
+        width="45"
+        height="45"
+        rx="11.5"
+        fill="none"
+        stroke="#F59E0B"
+        strokeWidth="2.25"
+      />
+      <path d="M8 11.5h32a3 3 0 0 1 0 6H8a3 3 0 0 1 0-6Z" fill="#F8FAFC" />
+      <path d="M28 11.5h12a3 3 0 0 1 0 6H28v-6Z" fill="#F59E0B" />
+      <path d="M18.5 17.5h9a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v-19a2 2 0 0 1 2-2Z" fill="#F8FAFC" />
+      <path d="M32 24.5h9M32 31h9" stroke="#10B981" strokeWidth="3" strokeLinecap="round" />
+      <path
+        d="M32 37.2 35.4 41l6.4-7.6"
+        stroke="#10B981"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -30,13 +41,13 @@ export function Logo({
   const sub = tone === "light" ? "text-amber" : "text-[#b45309]";
 
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
+    <span className={cn("inline-flex items-center gap-3", className)}>
       <LogoMark />
       <span className="flex flex-col leading-none">
-        <span className={cn("font-heading text-[1.2rem] font-extrabold tracking-tight", word)}>
-          Tigri<span className={accent}>x</span>
+        <span className={cn("font-heading text-[1.7rem] font-extrabold tracking-tight", word)}>
+          Tigri<span className={accent}>s</span>
         </span>
-        <span className={cn("mt-1 text-[0.62rem] font-bold uppercase tracking-[0.28em]", sub)}>
+        <span className={cn("mt-1.5 text-[0.78rem] font-extrabold uppercase tracking-[0.22em]", sub)}>
           Bookkeeping
         </span>
       </span>

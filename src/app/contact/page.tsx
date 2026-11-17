@@ -7,7 +7,7 @@ import { site } from "@/config/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Tigrix LLC about bookkeeping for construction companies and every other business in Atlanta, Detroit, or remote.",
+    "Contact Tigris LLC at 444 Manget St SE, Marietta, GA 30060, or call (248) 550-1440, about weekly bookkeeping, receipt organization, and messy-books cleanup.",
 };
 
 export default function ContactPage() {
@@ -27,6 +27,15 @@ export default function ContactPage() {
               </a>
             </li>
             <li>
+              <a href={site.addressHref} className="font-semibold" target="_blank" rel="noreferrer">
+                {site.street}
+                <br />
+                {site.city}, {site.region} {site.postalCode}
+                <br />
+                {site.country}
+              </a>
+            </li>
+            <li>
               <a href={site.emailHref} className="font-semibold">
                 {site.email}
               </a>
@@ -35,7 +44,7 @@ export default function ContactPage() {
             <li>Atlanta, GA · Detroit, MI · Remote welcome</li>
           </ul>
           <p className="mt-4 text-xs text-slate-500">
-            Phone and email above are placeholders until they are replaced in the site config. This form is a demo and does not send email.
+            Email above is a placeholder until it is replaced in the site config. This form is a demo and does not send email.
           </p>
         </div>
         <ContactForm />

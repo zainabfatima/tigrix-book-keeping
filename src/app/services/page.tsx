@@ -10,7 +10,7 @@ import { images, services } from "@/config/site";
 export const metadata: Metadata = {
   title: "Bookkeeping Services",
   description:
-    "Weekly and monthly bookkeeping, messy-books cleanup, QuickBooks setup, reconciliations, invoicing, job costing, and tax-ready reports for construction and every other business.",
+    "Weekly bookkeeping, receipt organization, messy-books cleanup, monthly closes, QuickBooks setup, reconciliations, invoicing, job costing, and tax-ready reports.",
 };
 
 export default function ServicesPage() {
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="The books, kept current."
-        lede="Pick the rhythm that matches the work. Contractors get job-cost detail. Every other business gets the same clean close."
+        lede="Weekly bookkeeping, receipt organization, and cleanup for messy books are the core. Contractors also get job-cost detail. Every other business gets the same clean close."
         image={images.spreadsheets}
       />
       <section className="py-16">

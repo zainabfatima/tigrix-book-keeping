@@ -52,7 +52,7 @@ export function HomePage() {
               {site.heroTitle}
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-slate-200">
-              Weekly bookkeeping, catch-up work, and job-cost reports for contractors — and the same clear books for every other business we serve. Atlanta, Detroit, and remote.
+              Weekly bookkeeping, receipt organization, and cleanup for messy books — plus job-cost reports for contractors. The office is in Marietta. Atlanta, Detroit, and remote clients are welcome.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg">
@@ -97,7 +97,7 @@ export function HomePage() {
           <SectionHeading
             eyebrow="Services"
             title="Bookkeeping that stays current"
-            lede="Six ways we keep the file usable. The full list, including reconciliations and invoicing, is on the services page."
+            lede="Weekly bookkeeping, receipt organization, and messy-books cleanup lead the list. Reconciliations, invoicing, and the rest are on the services page."
           />
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {homeServices.map((service, index) => (

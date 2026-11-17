@@ -65,6 +65,20 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <a
+                href={site.addressHref}
+                className="hover:text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {site.street}
+                <br />
+                {site.city}, {site.region} {site.postalCode}
+                <br />
+                {site.country}
+              </a>
+            </li>
+            <li>
               <a href={site.emailHref} className="hover:text-white">
                 {site.email}
               </a>
@@ -72,7 +86,7 @@ export function Footer() {
             <li>{site.hours}</li>
           </ul>
           <p className="mt-4 text-xs leading-5 text-slate-500">
-            Phone, email, and “Starting at $___” prices are placeholders in this demo. Update them in src/config/site.ts.
+            Email and “Starting at $___” prices are still placeholders. Phone and office address are current.
           </p>
         </div>
       </div>

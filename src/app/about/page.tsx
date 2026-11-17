@@ -10,7 +10,7 @@ import { images, site } from "@/config/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Tigrix LLC is a bookkeeping firm focused on construction companies, and open to every other business, serving Atlanta, Detroit, and remote clients.",
+    "Tigris LLC is a bookkeeping firm in Marietta, Georgia, focused on construction companies and open to every other business, serving Atlanta, Detroit, and remote clients.",
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="A bookkeeping firm for people who build — and people who run everything else."
-        lede="Tigrix keeps the file current so owners can see the job, the cash, and what the CPA will need. No invented awards on this page."
+        lede="Tigris keeps the file current so owners can see the job, the cash, and what the CPA will need. Weekly books, organized receipts, and cleanup for messy files. No invented awards on this page."
         image={images.meeting}
       />
       <section className="py-16">
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 We work in QuickBooks Online, QuickBooks Desktop, and the other tools listed on the request form. Saying so is not a certification. Tax filing stays with your CPA.
               </p>
               <p>
-                Service areas are Atlanta, Georgia and Detroit, Michigan. {site.remoteNote} We reply during {site.hours}.
+                The office is at {site.addressLine}. Call {site.phone}. Service areas are Atlanta, Georgia and Detroit, Michigan. {site.remoteNote} We reply during {site.hours}.
               </p>
             </div>
             <Link href="/request-service" className="mt-6 inline-block font-semibold text-navy underline-offset-4 hover:underline">

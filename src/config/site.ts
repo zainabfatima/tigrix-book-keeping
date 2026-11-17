@@ -1,6 +1,6 @@
 /**
- * Single source for Tigrix business info.
- * Replace `url`, `phone`, and `email` before launch.
+ * Single source for Tigris business info.
+ * Replace `url` and `email` before launch.
  * Package prices are intentionally unfinished: "Starting at $___".
  */
 
@@ -90,18 +90,25 @@ export const images = {
 } satisfies Record<string, Photo>;
 
 export const site = {
-  name: "Tigrix LLC",
-  shortName: "Tigrix",
+  name: "Tigris LLC",
+  shortName: "Tigris",
   tagline: "Clean Books. Clear Profits.",
   heroTitle:
     "Clean Books. Clear Profits. Built for Construction & Every Business.",
   description:
-    "Bookkeeping for construction companies and every other business. Weekly or monthly closes, catch-up work, and tax-ready books for clients in Atlanta, Detroit, and remote.",
+    "Weekly bookkeeping, receipt organization, and messy-books cleanup. Tigris LLC is at 444 Manget St SE, Marietta, GA 30060, serving Atlanta, Detroit, and remote clients.",
   /** Placeholder domain for metadata. Replace before launch. */
   url: "https://example.com",
-  /** Placeholder phone. Replace before launch. */
-  phone: "(000) 000-0000",
-  phoneHref: "tel:+10000000000",
+  phone: "(248) 550-1440",
+  phoneHref: "tel:+12485501440",
+  street: "444 Manget St SE",
+  city: "Marietta",
+  region: "GA",
+  postalCode: "30060",
+  country: "USA",
+  addressLine: "444 Manget St SE, Marietta, GA 30060, USA",
+  addressHref:
+    "https://www.google.com/maps/search/?api=1&query=444+Manget+St+SE,+Marietta,+GA+30060",
   /** Placeholder email. Replace before launch. */
   email: "hello@example.com",
   emailHref: "mailto:hello@example.com",
@@ -145,7 +152,7 @@ export const trustItems = [
 
 export const snapshot = [
   { value: 2, label: "Metro areas", detail: "Atlanta and Detroit" },
-  { value: 9, label: "Bookkeeping services", detail: "Catch-up through weekly closes" },
+  { value: 10, label: "Bookkeeping services", detail: "Weekly books, receipts, and cleanup" },
   { value: 8, label: "Industries welcome", detail: "Construction first, not construction only" },
 ];
 
@@ -166,6 +173,15 @@ export const services: Service[] = [
     detail:
       "We categorize, reconcile, and send a short written update each week. Built for active jobs and higher transaction volume.",
     icon: "calendar-check",
+    home: true,
+  },
+  {
+    id: "receipts",
+    name: "Receipt Organization",
+    summary: "Paper and digital receipts sorted, matched, and ready before the weekly close.",
+    detail:
+      "We collect, label, and file receipts so charges are not a pile at month-end. Each receipt is matched to the bank or card line and coded to the right account — and to the job, when the work is construction.",
+    icon: "receipt",
     home: true,
   },
   {
@@ -236,7 +252,7 @@ export const services: Service[] = [
     name: "Financial Reports & Tax-Ready Books",
     summary: "Profit and loss, balance sheet, and a file your CPA can actually use.",
     detail:
-      "Standard financial reports at each close, organized for your CPA. Tigrix prepares books. We do not prepare or file tax returns.",
+      "Standard financial reports at each close, organized for your CPA. Tigris prepares books. We do not prepare or file tax returns.",
     icon: "chart",
     home: true,
   },
@@ -301,6 +317,15 @@ export const storySlides: StorySlide[] = [
     image: images.laptopNotes,
   },
   {
+    id: "receipts-slide",
+    kind: "Service",
+    title: "Receipts filed before they become a pile",
+    body: "Paper and digital receipts get labeled, matched to the charge, and coded so the weekly books stay current.",
+    href: "/services#receipts",
+    cta: "Receipt organization",
+    image: images.meeting,
+  },
+  {
     id: "quickbooks-slide",
     kind: "Service",
     title: "QuickBooks set up for how the work runs",
@@ -313,7 +338,7 @@ export const storySlides: StorySlide[] = [
     id: "reports-slide",
     kind: "Service",
     title: "Reports your CPA can use",
-    body: "Profit and loss, balance sheet, and a file organized at each close. Tigrix prepares the books. Tax filing stays with your CPA.",
+    body: "Profit and loss, balance sheet, and a file organized at each close. Tigris prepares the books. Tax filing stays with your CPA.",
     href: "/services#tax-ready",
     cta: "Tax-ready books",
     image: images.reportsTable,
@@ -542,7 +567,7 @@ export const areas: Record<Area["slug"], Area> = {
     description:
       "Bookkeeping for construction companies and every business in metro Atlanta, including Marietta, Kennesaw, Alpharetta, Smyrna, Roswell, Sandy Springs, and Decatur. Remote clients welcome.",
     lede:
-      "Metro Atlanta contractors and other local businesses get the same offer: current books, job costs when you need them, and a file your CPA can use. Meetings are remote.",
+      "The office is at 444 Manget St SE in Marietta. Metro Atlanta contractors and other local businesses get the same offer: current books, receipt organization, job costs when you need them, and a file your CPA can use. Meetings can be remote.",
     image: images.atlanta,
     neighborhoods: [
       "Marietta",
@@ -576,7 +601,7 @@ export const faqs = [
   },
   {
     q: "Which areas do you serve?",
-    a: "Atlanta, Georgia and Detroit, Michigan, including the nearby communities listed on our service-area pages. Remote clients are welcome anywhere we can meet by video and share files.",
+    a: "The office is at 444 Manget St SE, Marietta, GA 30060. We serve Atlanta, Georgia and Detroit, Michigan, including the nearby communities listed on our service-area pages. Remote clients are welcome anywhere we can meet by video and share files.",
   },
   {
     q: "Do I need to be local for you to take the work?",
@@ -616,7 +641,7 @@ export const faqs = [
   },
   {
     q: "Do you prepare or file taxes?",
-    a: "No. Tigrix provides bookkeeping. Tax preparation and filing stay with your CPA or tax preparer.",
+    a: "No. Tigris provides bookkeeping. Tax preparation and filing stay with your CPA or tax preparer.",
   },
   {
     q: "How is pricing set?",

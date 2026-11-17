@@ -6,7 +6,7 @@ import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
-import { storySlides } from "@/config/site";
+import { site, storySlides } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 const INTERVAL = 4800;
@@ -54,7 +54,7 @@ export function StorySlider() {
       className="relative"
       role="region"
       aria-roledescription="carousel"
-      aria-label="Problems, services, and who Tigrix serves"
+      aria-label={`Problems, services, and who ${site.shortName} serves`}
       onMouseEnter={() => setHeld(true)}
       onMouseLeave={() => setHeld(false)}
       onKeyDown={(event) => {

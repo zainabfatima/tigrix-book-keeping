@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 
 import { Logo } from "@/components/brand/logo";
 import { Button } from "@/components/ui/button";
@@ -42,12 +42,12 @@ export function Header() {
     <header className="sticky top-0 z-50">
       <div className="h-1 bg-gradient-to-r from-amber via-emerald to-amber" />
       <div className="border-b border-white/10 bg-navy/95 backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link href="/" aria-label="Tigrix LLC home">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-6">
+          <Link href="/" aria-label={`${site.name} home`} className="shrink-0">
             <Logo />
           </Link>
 
-          <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-3 xl:gap-4 lg:flex" aria-label="Primary">
             {mainNav.map((item) => (
               <Link key={item.href} href={item.href} className={linkClass(item.href)}>
                 {item.label}
@@ -82,11 +82,18 @@ export function Header() {
             </div>
           </nav>
 
-          <div className="hidden items-center gap-3 lg:flex">
-            <Link href="/contact" className="text-sm font-medium text-slate-200 hover:text-white">
+          <div className="hidden shrink-0 items-center gap-2 lg:flex">
+            <Link href="/contact" className="px-1 text-sm font-medium text-slate-200 hover:text-white">
               Contact
             </Link>
-            <Button asChild>
+            <Button asChild variant="outlineNavy" className="shrink-0">
+              <a href={site.phoneHref}>
+                <Phone aria-hidden="true" />
+                Call
+                <span className="hidden font-semibold tracking-tight xl:inline">{site.phone}</span>
+              </a>
+            </Button>
+            <Button asChild className="shrink-0">
               <Link href="/request-service">Request Service</Link>
             </Button>
           </div>
@@ -104,7 +111,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="fixed inset-x-0 bottom-16 top-[4.25rem] z-40 overflow-y-auto bg-navy px-4 py-6 lg:hidden">
+        <div className="fixed inset-x-0 bottom-[4.5rem] top-[5.25rem] z-40 overflow-y-auto bg-navy px-4 py-6 md:bottom-0 lg:hidden">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             <Link href="/" className="rounded-xl px-3 py-3 text-white">
               Home
@@ -122,7 +129,13 @@ export function Header() {
             <Link href="/contact" className="rounded-xl px-3 py-3 text-white">
               Contact
             </Link>
-            <Button asChild className="mt-4">
+            <Button asChild variant="outline" size="lg" className="mt-4 w-full">
+              <a href={site.phoneHref}>
+                <Phone aria-hidden="true" />
+                Call {site.phone}
+              </a>
+            </Button>
+            <Button asChild size="lg" className="mt-3 w-full">
               <Link href="/request-service">Request Service</Link>
             </Button>
           </nav>

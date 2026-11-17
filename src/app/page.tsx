@@ -5,7 +5,7 @@ import { site } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Tigrix LLC | Bookkeeping for Construction & Every Business",
+    absolute: `${site.name} | Bookkeeping for Construction & Every Business`,
   },
   description: site.description,
 };

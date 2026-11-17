@@ -7,7 +7,7 @@ import { site } from "@/config/site";
 export const metadata: Metadata = {
   title: "Request Service",
   description:
-    "Request bookkeeping from Tigrix LLC. Share your business, software, and how far behind the books are. Construction and every other industry welcome.",
+    "Request weekly bookkeeping, receipt organization, or messy-books cleanup from Tigris LLC in Marietta, Georgia. Construction and every other industry welcome.",
 };
 
 export default function RequestServicePage() {

@@ -23,7 +23,7 @@ export default function ConstructionPage() {
       <PageHero
         eyebrow="Construction bookkeeping"
         title="Job costs that match the work in the field."
-        lede="Tigrix keeps construction books current — and we do the same for every other business we take on. If you build things, this is the page written for you."
+        lede="Tigris keeps construction books current — weekly closes, organized receipts, and cleanup when the file is messy — and we do the same for every other business we take on. If you build things, this is the page written for you."
         image={images.siteCrew}
       />
 

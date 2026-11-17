@@ -22,15 +22,15 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Tigrix LLC | Bookkeeping for Construction & Every Business",
-    template: "%s | Tigrix LLC",
+    default: `${site.name} | Bookkeeping for Construction & Every Business`,
+    template: `%s | ${site.name}`,
   },
   description: site.description,
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: site.name,
-    title: "Tigrix LLC | Bookkeeping for Construction & Every Business",
+    title: `${site.name} | Bookkeeping for Construction & Every Business`,
     description: site.description,
   },
 };
