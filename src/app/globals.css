@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #334155;
+  --background: #ffffff;
+  --foreground: #1c1c1c;
   --card: #ffffff;
-  --card-foreground: #0f1e3d;
-  --primary: #0f1e3d;
+  --card-foreground: #0c0c0c;
+  --primary: #0c0c0c;
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #0f1e3d;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #f59e0b;
-  --accent-foreground: #0f1e3d;
+  --secondary: #f7f4ea;
+  --secondary-foreground: #0c0c0c;
+  --muted: #f7f4ea;
+  --muted-foreground: #5c5648;
+  --accent: #e6b325;
+  --accent-foreground: #0c0c0c;
   --destructive: #dc2626;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #10b981;
+  --border: #ece6d6;
+  --input: #ece6d6;
+  --ring: #e6b325;
   --radius: 1rem;
-  --navy: #0f1e3d;
-  --emerald: #10b981;
-  --amber: #f59e0b;
-  --canvas: #f8fafc;
+  --navy: #0c0c0c;
+  --emerald: #e6b325;
+  --amber: #f6d36b;
+  --bronze: #9a6b08;
+  --canvas: #ffffff;
 }
 
 @theme inline {
@@ -44,6 +45,7 @@
   --color-navy: var(--navy);
   --color-emerald: var(--emerald);
   --color-amber: var(--amber);
+  --color-bronze: var(--bronze);
   --color-canvas: var(--canvas);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
@@ -80,6 +82,17 @@
   to {
     transform: scaleX(1);
   }
+}
+
+@theme {
+  --color-slate-50: #fafafa;
+  --color-slate-100: #f4f4f2;
+  --color-slate-200: #f6edd4;
+  --color-slate-300: #e4d7a8;
+  --color-slate-400: #8a8172;
+  --color-slate-500: #5c5648;
+  --color-slate-600: #3a3a3a;
+  --color-slate-700: #1c1c1c;
 }
 
 @layer base {

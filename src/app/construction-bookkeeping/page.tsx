@@ -30,7 +30,7 @@ export default function ConstructionPage() {
       <section className="py-16">
         <Container className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#b45309]">On the job</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">On the job</p>
             <h2 className="mt-2 text-3xl font-bold">What construction files usually need</h2>
             <p className="mt-3 text-slate-600">
               A generic close misses retainage, change orders, and the receipt that belongs to one job and not another. These are the items we build the file around.

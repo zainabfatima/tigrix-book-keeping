@@ -15,7 +15,7 @@ export default function ContactPage() {
     <section className="py-16">
       <Container className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#b45309]">Contact</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze">Contact</p>
           <h1 className="mt-2 text-4xl font-bold">Send a note.</h1>
           <p className="mt-3 text-slate-600">
             For a full scope, the request form is the better start. Use this page for a shorter question.

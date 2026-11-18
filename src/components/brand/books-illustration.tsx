@@ -29,17 +29,17 @@ export function BooksIllustration() {
           After
         </figcaption>
         <svg viewBox="0 0 280 180" className="h-auto w-full" role="img" aria-label="Clean ledger with aligned rows and check marks">
-          <rect x="28" y="16" width="224" height="148" rx="12" fill="#f8fafc" stroke="#a7f3d0" />
-          <rect x="28" y="16" width="224" height="32" rx="12" fill="#0F1E3D" />
-          <rect x="28" y="36" width="224" height="12" fill="#0F1E3D" />
-          <text x="44" y="37" fill="#F59E0B" fontSize="11" fontFamily="sans-serif">
+          <rect x="28" y="16" width="224" height="148" rx="12" fill="#fffdf8" stroke="#f6d36b" />
+          <rect x="28" y="16" width="224" height="32" rx="12" fill="#0C0C0C" />
+          <rect x="28" y="36" width="224" height="12" fill="#0C0C0C" />
+          <text x="44" y="37" fill="#F6D36B" fontSize="11" fontFamily="sans-serif">
             Job ledger
           </text>
           {[0, 1, 2, 3].map((row) => (
             <g key={row} transform={`translate(0 ${row * 26})`}>
               <rect x="44" y="62" width="150" height="8" rx="4" fill="#cbd5e1" />
-              <circle cx="220" cy="66" r="8" fill="#10B981" />
-              <path d="M216 66.5 219 69.5 224.5 63" fill="none" stroke="#0F1E3D" strokeWidth="1.6" strokeLinecap="round" />
+              <circle cx="220" cy="66" r="8" fill="#E6B325" />
+              <path d="M216 66.5 219 69.5 224.5 63" fill="none" stroke="#0C0C0C" strokeWidth="1.6" strokeLinecap="round" />
             </g>
           ))}
         </svg>

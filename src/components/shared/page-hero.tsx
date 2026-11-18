@@ -16,7 +16,7 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-navy text-white">
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,#0F1E3D_0%,#12344a_58%,#0f766e_140%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,179,37,0.45),transparent_46%),linear-gradient(145deg,#0C0C0C_0%,#1A1406_55%,#6A4E08_130%)]" />
       <Container className="relative grid items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber">{eyebrow}</p>

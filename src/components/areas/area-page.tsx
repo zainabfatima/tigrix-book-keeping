@@ -52,7 +52,7 @@ export function AreaPage({ area }: { area: Area }) {
             </p>
           </div>
           <aside className="rounded-2xl bg-white p-6 shadow-[0_16px_40px_-28px_rgba(15,30,61,0.55)]">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#b45309]">Also serving</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze">Also serving</p>
             <h3 className="mt-2 text-2xl font-bold">
               {other.city}, {other.abbr}
             </h3>

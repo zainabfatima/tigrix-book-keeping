@@ -35,7 +35,7 @@ export function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-navy text-white">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(16,185,129,0.28),transparent_36%),linear-gradient(135deg,#0F1E3D_0%,#12344a_55%,#0f766e_130%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(230,179,37,0.55),transparent_42%),linear-gradient(145deg,#0C0C0C_0%,#1A1406_52%,#6A4E08_130%)]" />
         <div
           className="absolute inset-0 opacity-[0.14]"
           style={{
@@ -247,7 +247,7 @@ export function HomePage() {
                   pkg.featured ? "bg-navy text-white" : "bg-canvas text-slate-700"
                 }`}
               >
-                <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${pkg.featured ? "text-amber" : "text-[#b45309]"}`}>
+                <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${pkg.featured ? "text-amber" : "text-bronze"}`}>
                   {pkg.audience}
                 </p>
                 <h3 className={`mt-2 text-2xl font-bold ${pkg.featured ? "text-white" : ""}`}>{pkg.name}</h3>

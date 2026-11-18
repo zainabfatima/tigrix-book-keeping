@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RequestServicePage() {
   return (
-    <section className="bg-[linear-gradient(180deg,#0F1E3D_0%,#0F1E3D_220px,#F8FAFC_220px)] py-14">
+    <section className="bg-[linear-gradient(180deg,#0C0C0C_0%,#0C0C0C_220px,#FFFFFF_220px)] py-14">
       <Container className="max-w-3xl">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber">Request service</p>
         <h1 className="mt-2 font-heading text-4xl font-bold text-white">Tell us about the books.</h1>

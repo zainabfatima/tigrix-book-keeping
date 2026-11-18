@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <section className="bg-[linear-gradient(160deg,#0F1E3D,#12344a_60%,#0f766e)] py-24 text-white">
+    <section className="bg-[linear-gradient(160deg,#0C0C0C,#1A1406_55%,#6A4E08)] py-24 text-white">
       <Container className="max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber">404</p>
         <h1 className="mt-3 font-heading text-4xl font-bold text-white sm:text-5xl">This page is not on the job.</h1>

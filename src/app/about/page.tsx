@@ -45,7 +45,7 @@ export default function AboutPage() {
             </Link>
           </article>
           <aside className="rounded-2xl border border-dashed border-amber bg-amber/10 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#b45309]">Placeholder</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze">Placeholder</p>
             <h2 className="mt-2 text-xl font-bold">Team profiles</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               Names, photos, and credentials will be added here when they are confirmed. None are shown on this demo, so nothing on this page is a stand-in biography.

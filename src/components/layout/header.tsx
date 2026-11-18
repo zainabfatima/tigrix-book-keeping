@@ -34,17 +34,17 @@ export function Header() {
 
   const linkClass = (href: string) =>
     cn(
-      "text-sm font-medium text-slate-200 transition hover:text-white",
-      pathname === href && "text-amber",
+      "text-sm font-medium text-navy transition hover:text-bronze",
+      pathname === href && "text-bronze",
     );
 
   return (
     <header className="sticky top-0 z-50">
       <div className="h-1 bg-gradient-to-r from-amber via-emerald to-amber" />
-      <div className="border-b border-white/10 bg-navy/95 backdrop-blur">
+      <div className="border-b border-black/10 bg-white">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-6">
           <Link href="/" aria-label={`${site.name} home`} className="shrink-0">
-            <Logo />
+            <Logo tone="dark" />
           </Link>
 
           <nav className="hidden items-center gap-3 xl:gap-4 lg:flex" aria-label="Primary">
@@ -57,8 +57,8 @@ export function Header() {
               <button
                 type="button"
                 className={cn(
-                  "inline-flex items-center gap-1 text-sm font-medium text-slate-200 hover:text-white",
-                  pathname.startsWith("/service-areas") && "text-amber",
+                  "inline-flex items-center gap-1 text-sm font-medium text-navy hover:text-bronze",
+                  pathname.startsWith("/service-areas") && "text-bronze",
                 )}
                 aria-expanded={areasOpen}
                 onClick={() => setAreasOpen((value) => !value)}
@@ -83,7 +83,7 @@ export function Header() {
           </nav>
 
           <div className="hidden shrink-0 items-center gap-2 lg:flex">
-            <Link href="/contact" className="px-1 text-sm font-medium text-slate-200 hover:text-white">
+            <Link href="/contact" className="px-1 text-sm font-medium text-navy hover:text-bronze">
               Contact
             </Link>
             <Button asChild variant="outlineNavy" className="shrink-0">
@@ -100,7 +100,7 @@ export function Header() {
 
           <button
             type="button"
-            className="grid size-11 place-items-center rounded-xl text-white lg:hidden"
+            className="grid size-11 place-items-center rounded-xl text-navy lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((value) => !value)}
@@ -111,25 +111,25 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="fixed inset-x-0 bottom-[4.5rem] top-[5.25rem] z-40 overflow-y-auto bg-navy px-4 py-6 md:bottom-0 lg:hidden">
+        <div className="fixed inset-x-0 bottom-[4.5rem] top-[5.25rem] z-40 overflow-y-auto bg-white px-4 py-6 md:bottom-0 lg:hidden">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
-            <Link href="/" className="rounded-xl px-3 py-3 text-white">
+            <Link href="/" className="rounded-xl px-3 py-3 text-navy">
               Home
             </Link>
             {mainNav.map((item) => (
-              <Link key={item.href} href={item.href} className="rounded-xl px-3 py-3 text-white">
+              <Link key={item.href} href={item.href} className="rounded-xl px-3 py-3 text-navy">
                 {item.label}
               </Link>
             ))}
             {areaLinks.map((item) => (
-              <Link key={item.href} href={item.href} className="rounded-xl px-3 py-3 text-slate-200">
+              <Link key={item.href} href={item.href} className="rounded-xl px-3 py-3 text-slate-600">
                 {item.label}
               </Link>
             ))}
-            <Link href="/contact" className="rounded-xl px-3 py-3 text-white">
+            <Link href="/contact" className="rounded-xl px-3 py-3 text-navy">
               Contact
             </Link>
-            <Button asChild variant="outline" size="lg" className="mt-4 w-full">
+            <Button asChild variant="outlineNavy" size="lg" className="mt-4 w-full">
               <a href={site.phoneHref}>
                 <Phone aria-hidden="true" />
                 Call {site.phone}
